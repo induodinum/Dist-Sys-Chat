@@ -1,8 +1,21 @@
+import { Navbar, Jumbotron, Button } from 'react-bootstrap';
 import React, { Component } from 'react';
+
 import logo from './logo.svg';
 import './App.css';
 
+import ChatApp from './Pages/ChatApp';
+import Login from './Pages/Login';
+import Register from './Pages/Register';
+
+
 class App extends Component {
+  state = {
+    
+    page : 'Login'
+
+  }
+  /*
   render() {
     return (
       <div className="App">
@@ -15,6 +28,28 @@ class App extends Component {
         </p>
       </div>
     );
+  }
+  */
+
+  changePage = (props) => {
+    this.setState({page:props.page});
+  }
+
+  render(){
+    if (this.state.page === 'Login'){
+      return (
+        <Login changePage={this.changePage}/>
+      );
+    }else if (this.state.page === 'Register'){
+      return (
+        <Register/>
+      );
+    }else if (this.state.page === 'ChatApp'){
+      return (
+        <ChatApp/>
+      );
+    }
+
   }
 }
 
