@@ -3,8 +3,10 @@ import React, {Component} from 'react';
 export default class Login extends Component {
     render(){
         return (
+            <div>
             <div> Login </div>
-            <button className='.btn .btn-success'></button>
+            <button className="btn btn-success">Login</button>
+            </div>
         );
 
 
