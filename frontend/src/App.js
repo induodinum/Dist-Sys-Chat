@@ -11,7 +11,9 @@ import Register from './Pages/Register';
 
 class App extends Component {
   state = {
+    
     page : 'Login'
+
   }
   /*
   render() {
@@ -36,7 +38,7 @@ class App extends Component {
   render(){
     if (this.state.page === 'Login'){
       return (
-        <Login/>
+        <Login changePage={this.changePage}/>
       );
     }else if (this.state.page === 'Register'){
       return (
