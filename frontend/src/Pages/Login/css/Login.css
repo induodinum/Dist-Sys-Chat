@@ -1,0 +1,23 @@
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 109, 199);
+}
+
+div.flexbox-container{
+    width : 25%;
+    height: 40%;
+    background-color : rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.logintxt{
+    text-align : center;
+    text-transform: uppercase;
+    font-size: 25px;
+    color : rgb(88, 88, 88);
+
+}
