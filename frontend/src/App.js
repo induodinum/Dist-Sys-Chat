@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
 import { Navbar, Jumbotron, Button } from 'react-bootstrap';
+import React, { Component } from 'react';
 
 import logo from './logo.svg';
 import './App.css';
