@@ -16,7 +16,7 @@ export default class Register extends Component{
         console.log (this.state);
         return (
             <div>
-                <div> Register </div>
+                <h3> Register </h3>
                 <div className="input-group">
                     <h5> Username : </h5> <input type="text" onChange={(event) => {this.setState({username:event.target.value})}} placeholder="Username . . ." />
                     <h5> Password : </h5> <input type="password" onChange={(event) => {this.setState({password:event.target.value})}} placeholder="Password . . ." />
