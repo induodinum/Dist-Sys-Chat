@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend of Distributed System Final Mini Project",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SaBuZa/Dist-Sys-Chat.git"
+  },
+  "author": "Kuma Kingdom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaBuZa/Dist-Sys-Chat/issues"
+  },
+  "homepage": "https://github.com/SaBuZa/Dist-Sys-Chat#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.0.16",
+    "socket.io": "^2.1.0"
+  }
+}
