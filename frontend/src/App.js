@@ -11,7 +11,7 @@ import Register from './Pages/Register';
 
 class App extends Component {
   state = {
-    
+
     page : 'Login'
 
   }
@@ -32,7 +32,10 @@ class App extends Component {
   */
 
   changePage = (props) => {
-    this.setState({page:props.page});
+    this.setState({
+      page:props.page
+    });
+    //console.log(this.state);
   }
 
   render(){

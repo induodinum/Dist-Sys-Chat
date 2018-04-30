@@ -1,9 +1,13 @@
+.main-wrapper{
+    height : 100vh;
+}
+
 .flexbox {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 500px;
+    height: 100%;
     background-color: rgb(255, 109, 199);
 }
 
@@ -20,4 +24,8 @@ div.flexbox-container{
     font-size: 25px;
     color : rgb(88, 88, 88);
 
+}
+
+h2{
+    color : grey;
 }
