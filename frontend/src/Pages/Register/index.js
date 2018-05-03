@@ -1,15 +1,23 @@
 import React, {Component} from 'react';
 
+
+import {sendRegisterRequest} from '../../chatAPI';
+
 export default class Register extends Component{
 
     state = {
         username : '',
         password : '',
         display_name : '',
+        client_id : ''
     }
 
     handleSubmit = () => {
         console.log("Submitted !");
+        let my_id = sendRegisterRequest();
+        console.log(my_id);
+        this.setState({client_id : my_id});
+        console.log(this.state);
     }
 
     render(){
