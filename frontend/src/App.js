@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-//import {sendMessage} from './socketAPI';
+//import {sendMessage} from './chatAPI';
 //import { sendMessage } from 'myAPI';
 
 import ChatApp from './Pages/ChatApp';

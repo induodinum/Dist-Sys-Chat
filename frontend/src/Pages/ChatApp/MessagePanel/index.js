@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import {sendMessage} from '../../../socketAPI';
+import {sendMessage} from '../../../chatAPI';
 
 import './css/MessagePanel.css';
 
