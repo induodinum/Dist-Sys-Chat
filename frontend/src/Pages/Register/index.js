@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {getClientID} from '../../chatAPI';
 
 export default class Register extends Component{
 
@@ -9,6 +10,7 @@ export default class Register extends Component{
     }
 
     handleSubmit = () => {
+        getClientID();
         console.log("Submitted !");
     }
 
