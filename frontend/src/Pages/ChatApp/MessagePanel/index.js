@@ -2,7 +2,11 @@ import React, {Component} from 'react';
 
 import {sendMessage} from '../../../chatAPI';
 
+import Cookies from 'universal-cookie';
+
 import './css/MessagePanel.css';
+
+const cookies = new Cookies();
 
 export default class MessagePanel extends Component{
 
@@ -13,7 +17,7 @@ export default class MessagePanel extends Component{
     handleSend = () => {
         console.log(this.state.message);
         //sendMessage(9158, 44, 'kkk');
-        sendMessage(9158, 44, this.state.message);
+        sendMessage(cookies.get('client_id'), 44, this.state.message);
     }
 
     handleEnter = (event) => {
