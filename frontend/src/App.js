@@ -4,6 +4,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+//import {sendMessage} from './socketAPI';
+//import { sendMessage } from 'myAPI';
+
 import ChatApp from './Pages/ChatApp';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
@@ -40,6 +43,7 @@ class App extends Component {
 
   render(){
     if (this.state.page === 'Login'){
+      //sendMessage(9158,44, 'test msg');
       return (
         <Login changePage={this.changePage}/>
       );
