@@ -1,6 +1,12 @@
 import React, {Component} from 'react';
 
+import {sendMessage} from '../../../chatAPI';
+
+import Cookies from 'universal-cookie';
+
 import './css/MessagePanel.css';
+
+const cookies = new Cookies();
 
 export default class MessagePanel extends Component{
 
@@ -9,11 +15,20 @@ export default class MessagePanel extends Component{
     }
 
     handleSend = () => {
+        console.log(this.state.message);
+        //sendMessage(9158, 44, 'kkk');
+        sendMessage(cookies.get('client_id'), 44, this.state.message);
+    }
 
+    handleEnter = (event) => {
+        if (event.key === 'Enter'){
+            this.handleSend();
+        }
     }
 
     render(){
-        console.log(this.state);
+        //console.log(this.state);
+        //sendMessage(9158, 44, 'kkk');
         return (
             <div className="message-panel">
                 <div className="row">
@@ -24,6 +39,7 @@ export default class MessagePanel extends Component{
                                 this.setState({message : event.target.value});
                             }
                         }
+                        onKeyPress={this.handleEnter}
                         placeholder="Message . . ." />
                     </div>
                     <div className="col-sm-2">
